@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <style>
+        div{
+            border: 2px rgba(133, 78, 131, 0.548) dashed;
+            width: 600px;
+            height: 600px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 40px;
+           background-repeat: no-repeat;
+            background: url("https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg");
+
+        }
+        h1{
+            font-family: cursive;
+            color: purple;
+            font-size: 50px;
+        }
+        label{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        input{
+            font-family: cursive;
+            border-radius: 40px;
+            font-size: 25px;
+        }
+        *
+        {
+            padding: 10px;
+            
+        }
+        #para{
+            font-size: 40px;
+            font-family: cursive;
+            color: rgb(220, 84, 188);
+        }
+        #para1
+        {
+            font-size: 30px;
+            font-family: cursive;
+        }
+        
+        button{
+            background-color: cornflowerblue;
+            border-radius: 20px;
+            font-family: cursive;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+    <h1>Text Message</h1>
+    <br>
+    <label>Enter Message</label>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter Message" id="msg1">
+    <br>
+    <br>
+    <button type="submit" id="btn" onclick="fun()">Submit</button>
+    <b><p id="para"></p></b>
+    <p id="para1">The Day must start with the good and healthy conversation. </p>
+    </div>
+</center>
+</body>
+<script>
+    function fun()
+    {
+        var str=document.getElementById("msg1").value;
+        document.getElementById("para").innerHTML=str;
+}
+</script>
+</html>
